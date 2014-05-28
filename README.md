@@ -1,6 +1,8 @@
 TemplateXBlock
 ==============
 
+Ignore this. startnew.py in the xblock-sdk repo is probably what you're looking for. 
+
 This is a wizard which will create a new XBlock for you. 
 
 To use, first set up xblock-sdk: 
