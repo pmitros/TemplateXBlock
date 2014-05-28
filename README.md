@@ -13,4 +13,7 @@ Then run:
     cd TemplateXBlock
     ./xmaker.py
 
-And follow the instructions!
+And follow the instructions! You should be good to go in a few
+minutes. 
+
+Tested on Ubuntu 14.04. 
