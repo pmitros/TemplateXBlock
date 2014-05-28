@@ -14,6 +14,7 @@ find . -type f | grep -v git | xargs sed -i 's/Template/{Shortname}/g'
 
 git remote rm origin
 git remote add origin {github}
+git rm --cached xmaker.py
 git commit -a -m "Initializing repo"
 git push --set-upstream origin master
 '''
@@ -40,3 +41,21 @@ for command in commands.split("\n"):
         print command
         os.system(command)
 
+print "We've pushed to your git repo."
+print "If you haven't yet done so, get and install this:"
+print
+print "  https://github.com/edx/xblock-sdk"
+print 
+print "As next steps, go to whereever you develop, and run: "
+print
+print "  git clone {github}".format(github = settings["github"])
+print 
+print "In your project, run" 
+print
+print "  python setup.py develop"
+print
+print "In github sdk, run:"
+print
+print "  python manage.py runserver"
+print
+print "And you should be good to go!"

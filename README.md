@@ -1,10 +1,16 @@
 TemplateXBlock
 ==============
 
-This is a simple template for an XBlock. It will play audio files as
-an HTML5 audio element. If unavailable, it will fall back to an embed
-element.
+This is a wizard which will create a new XBlock for you. 
 
-Usage: 
+To use, first set up xblock-sdk: 
 
-    <template src="http://server.tld/static/song.mp3" />
+  https://github.com/edx/xblock-sdk
+
+Then run: 
+
+  git clone https://github.com/pmitros/TemplateXBlock
+  cd TemplateXBlock
+  ./xmaker.py
+
+And follow the instructions!
